@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jatin Kumar – CS Developer & Problem Solver</title>
+  <meta name="description"
+    content="Portfolio of Jatin Kumar – CS undergraduate, competitive programmer, and AI/ML project builder from IEM Kolkata." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ===== CURSOR ===== -->
+  <div id="cursor-dot"></div>
+  <div id="cursor-ring"></div>
+
+  <!-- ===== NAV ===== -->
+  <nav id="navbar">
+    <div class="nav-logo">JK</div>
+    <ul class="nav-links">
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#competitive" class="nav-link">CP Stats</a></li>
+      <li><a href="#awards" class="nav-link">Awards</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+    <button id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section id="hero">
+    <canvas id="hero-canvas"></canvas>
+    <div class="hero-content">
+      <p class="hero-greeting">Hello, I'm</p>
+      <h1 class="hero-name">Jatin Kumar</h1>
+      <div class="typewriter-wrap">
+        <span id="typewriter"></span><span class="cursor-blink">|</span>
+      </div>
+      <p class="hero-tagline">CS Undergraduate @ IEM Kolkata &nbsp;·&nbsp; CGPA 9.47</p>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="#contact" class="btn btn-ghost">Let's Connect</a>
+      </div>
+      <div class="hero-socials">
+        <a href="https://linkedin.com/in/jatin-kumar-2ba94a28a" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M20.45 20.45H17V14.88c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.57V9h3.26v1.56h.05c.45-.86 1.56-1.77 3.2-1.77 3.42 0 4.05 2.25 4.05 5.17v6.49zM5.34 7.43a1.9 1.9 0 110-3.8 1.9 1.9 0 010 3.8zM6.93 20.45H3.75V9h3.18v11.45zM22.22 0H1.77C.8 0 0 .77 0 1.72v20.56C0 23.23.8 24 1.77 24h20.45C23.2 24 24 23.23 24 22.28V1.72C24 .77 23.2 0 22.22 0z" />
+          </svg>
+        </a>
+        <a href="https://github.com/JKBYTEcrafter" target="_blank" rel="noopener" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.44 9.8 8.2 11.39.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.61-4.04-1.61-.54-1.38-1.33-1.75-1.33-1.75-1.09-.74.08-.73.08-.73 1.2.09 1.84 1.24 1.84 1.24 1.07 1.83 2.8 1.3 3.48.99.11-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.17 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 013.02-.41c1.02.01 2.05.14 3.01.41 2.28-1.55 3.29-1.23 3.29-1.23.66 1.65.25 2.87.12 3.17.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.82 1.1.82 2.22v3.29c0 .32.21.7.82.58C20.56 21.8 24 17.31 24 12c0-6.63-5.37-12-12-12z" />
+          </svg>
+        </a>
+        <a href="https://leetcode.com/u/JKByteCrafter/" target="_blank" rel="noopener" aria-label="LeetCode">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M13.48 20.67l-3.86 3.86a1.5 1.5 0 01-2.13 0l-3.86-3.86a1.5 1.5 0 010-2.12l6.93-6.93-6.93-6.93a1.5 1.5 0 010-2.12l3.86-3.86a1.5 1.5 0 012.13 0l3.86 3.86a1.5 1.5 0 010 2.12L9.55 12l3.93 3.93v.01l.01.01a1.5 1.5 0 01-.01 2.72z" />
+            <path d="M21.5 10.5h-8a1.5 1.5 0 000 3h8a1.5 1.5 0 000-3z" />
+          </svg>
+        </a>
+        <a href="https://codeforces.com/profile/jatinkumar15002" target="_blank" rel="noopener" aria-label="Codeforces">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <rect x="0" y="12" width="6" height="12" rx="1" fill="currentColor" />
+            <rect x="9" y="6" width="6" height="18" rx="1" fill="currentColor" />
+            <rect x="18" y="0" width="6" height="24" rx="1" fill="currentColor" />
+          </svg>
+        </a>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="section-title">About <span class="highlight">Me</span></h2>
+      <div class="about-grid">
+        <div class="about-avatar-wrap">
+          <div class="avatar-ring" id="avatar-ring">
+            <div class="avatar-inner">JK</div>
+          </div>
+          <div class="avatar-orbs">
+            <span class="orb orb-1"></span>
+            <span class="orb orb-2"></span>
+            <span class="orb orb-3"></span>
+          </div>
+        </div>
+        <div class="about-text">
+          <p class="about-bio">
+            I'm a Computer Science undergraduate at the <strong>Institute of Engineering and Management,
+              Kolkata</strong> (2023–2027), passionate about building impactful technology solutions. I combine strong
+            algorithmic foundations with hands-on project experience in AI/ML, computer vision, and full-stack
+            development.
+          </p>
+          <p class="about-bio">
+            I spearhead research initiatives, compete actively in hackathons, and believe in leveraging strategic
+            thinking and collaborative leadership to create solutions that genuinely matter.
+          </p>
+          <div class="about-stats-row">
+            <div class="mini-stat"><span class="mini-num">9.47</span><span class="mini-label">CGPA</span></div>
+            <div class="mini-stat"><span class="mini-num">2+</span><span class="mini-label">Major Projects</span></div>
+            <div class="mini-stat"><span class="mini-num" id="gh-repos-mini">–</span><span class="mini-label">GitHub
+                Repos</span></div>
+            <div class="mini-stat"><span class="mini-num" id="gh-followers-mini">–</span><span
+                class="mini-label">Followers</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section id="skills" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">Skills &amp; <span class="highlight">Stack</span></h2>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h3 class="skill-cat-title">
+            <svg class="cat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="16 18 22 12 16 6" />
+              <polyline points="8 6 2 12 8 18" />
+            </svg>
+            Languages
+          </h3>
+          <div class="skill-tags">
+            <span class="tag" data-color="coral">Java</span>
+            <span class="tag" data-color="cyan">Python</span>
+            <span class="tag" data-color="purple">C</span>
+            <span class="tag" data-color="yellow">SQL</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3 class="skill-cat-title">
+            <svg class="cat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10" />
+              <line x1="2" y1="12" x2="22" y2="12" />
+              <path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z" />
+            </svg>
+            Web Technologies
+          </h3>
+          <div class="skill-tags">
+            <span class="tag" data-color="coral">HTML</span>
+            <span class="tag" data-color="cyan">CSS</span>
+            <span class="tag" data-color="yellow">JavaScript</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3 class="skill-cat-title">
+            <svg class="cat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z" />
+              <polyline points="14 2 14 8 20 8" />
+            </svg>
+            Tools & Platforms
+          </h3>
+          <div class="skill-tags">
+            <span class="tag" data-color="purple">Git</span>
+            <span class="tag" data-color="coral">GitHub</span>
+            <span class="tag" data-color="cyan">MySQL</span>
+            <span class="tag" data-color="yellow">Jira</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3 class="skill-cat-title">
+            <svg class="cat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+            </svg>
+            Core Competencies
+          </h3>
+          <div class="skill-tags">
+            <span class="tag" data-color="coral">Problem Solving</span>
+            <span class="tag" data-color="cyan">Logical Thinking</span>
+            <span class="tag" data-color="purple">Team Leadership</span>
+            <span class="tag" data-color="yellow">Communication</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h2 class="section-title">Featured <span class="highlight">Projects</span></h2>
+      <div class="projects-grid">
+
+        <!-- Project 1 -->
+        <div class="flip-card" id="proj-1">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <div class="proj-glow proj-glow-1"></div>
+              <div class="proj-icon-wrap">
+                <svg class="proj-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M12 2L2 7l10 5 10-5-10-5z" />
+                  <path d="M2 17l10 5 10-5" />
+                  <path d="M2 12l10 5 10-5" />
+                </svg>
+              </div>
+              <h3 class="proj-title">Drone-to-Map AI System</h3>
+              <p class="proj-period">July 2025 – December 2025</p>
+              <div class="proj-tags">
+                <span>Python</span><span>YOLOv8</span><span>DeepSORT</span><span>Folium</span>
+              </div>
+              <p class="proj-hint">Hover / tap to flip →</p>
+            </div>
+            <div class="flip-card-back">
+              <h3 class="proj-back-title">Drone-to-Map AI System</h3>
+              <ul class="proj-bullets">
+                <li>Automated pipeline to process drone footage &amp; GPS data, extracting keyframes for geospatial
+                  mapping</li>
+                <li>YOLOv8 object detection + DeepSORT tracking to identify &amp; track urban objects across frames</li>
+                <li>Interactive Folium maps with time-sliders &amp; class filters for urban planners</li>
+                <li>Web-based UI for real-time video upload &amp; visualization</li>
+                <li>Packaged with Docker for scalable cloud deployment</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="flip-card" id="proj-2">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <div class="proj-glow proj-glow-2"></div>
+              <div class="proj-icon-wrap">
+                <svg class="proj-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <circle cx="12" cy="12" r="10" />
+                  <path d="M12 8v4l3 3" />
+                </svg>
+              </div>
+              <h3 class="proj-title">Academic Research Assistant</h3>
+              <p class="proj-period">Jan 2026 – March 2026</p>
+              <div class="proj-tags">
+                <span>Python</span><span>Flask</span><span>Gemini LLM</span><span>FAISS</span>
+              </div>
+              <p class="proj-hint">Hover / tap to flip →</p>
+            </div>
+            <div class="flip-card-back">
+              <h3 class="proj-back-title">Academic Research Assistant</h3>
+              <ul class="proj-bullets">
+                <li>Agent-based AI system to automate research planning, literature analysis &amp; proposal generation
+                </li>
+                <li>Hybrid multi-agent pipeline: Planning, Retrieval, Analysis, Gap, Novelty, Methodology &amp; Writer
+                  agents</li>
+                <li>RAG with FAISS to retrieve research papers &amp; enhance LLM accuracy</li>
+                <li>Full-stack React + Flask platform for structured research insights &amp; grant proposals</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- GitHub Live Stats -->
+      <div class="gh-stats-card reveal" id="gh-card">
+        <div class="gh-card-logo">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.44 9.8 8.2 11.39.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.61-4.04-1.61-.54-1.38-1.33-1.75-1.33-1.75-1.09-.74.08-.73.08-.73 1.2.09 1.84 1.24 1.84 1.24 1.07 1.83 2.8 1.3 3.48.99.11-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.17 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 013.02-.41c1.02.01 2.05.14 3.01.41 2.28-1.55 3.29-1.23 3.29-1.23.66 1.65.25 2.87.12 3.17.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.82 1.1.82 2.22v3.29c0 .32.21.7.82.58C20.56 21.8 24 17.31 24 12c0-6.63-5.37-12-12-12z" />
+          </svg>
+          <div class="gh-card-info">
+            <h3>GitHub Activity</h3>
+            <a href="https://github.com/JKBYTEcrafter" target="_blank" rel="noopener">@JKBYTEcrafter ↗</a>
+          </div>
+        </div>
+        <div class="gh-stat-pills">
+          <div class="gh-pill"><span class="gh-pill-num" id="gh-repos">–</span><span class="gh-pill-label">Repos</span>
+          </div>
+          <div class="gh-pill"><span class="gh-pill-num" id="gh-followers">–</span><span
+              class="gh-pill-label">Followers</span></div>
+          <div class="gh-pill"><span class="gh-pill-num" id="gh-following">–</span><span
+              class="gh-pill-label">Following</span></div>
+          <div class="gh-pill"><span class="gh-pill-num" id="gh-stars">–</span><span class="gh-pill-label">Stars</span>
+          </div>
+        </div>
+        <div class="gh-card-footer">
+          <span class="gh-status-text" id="gh-status">Fetching live data…</span>
+          <a href="https://github.com/JKBYTEcrafter" target="_blank" rel="noopener" class="gh-verify-btn">View on GitHub
+            ↗</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== COMPETITIVE PROGRAMMING ===== -->
+  <section id="competitive" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">Competitive <span class="highlight">Programming</span></h2>
+      <p class="section-sub">Stats update in real-time from the official APIs</p>
+      <div class="cp-grid">
+
+        <!-- LeetCode Card -->
+        <div class="cp-card" id="lc-card">
+          <div class="cp-card-header">
+            <div class="cp-logo lc-logo">
+              <svg viewBox="0 0 95 111" fill="none">
+                <path
+                  d="M68.8 89.6c2 2 2 5.2 0 7.2L58 107.6a5.1 5.1 0 01-7.2 0L29.2 86a5.1 5.1 0 010-7.2l11-11a5.1 5.1 0 017.3 0l7.5 7.5L68.8 89.6z"
+                  fill="#FFA116" />
+                <path d="M42 54.8L7.6 89.2a5.1 5.1 0 000 7.2l10.8 10.8a5.1 5.1 0 007.2 0L60 72.8" stroke="#B3B3B3"
+                  stroke-width="7" stroke-linecap="round" />
+                <path d="M65.2 39.6H27.6a5 5 0 000 10h37.6a5 5 0 000-10z" fill="#070706" />
+              </svg>
+            </div>
+            <div>
+              <h3 class="cp-platform">LeetCode</h3>
+              <a href="https://leetcode.com/u/JKByteCrafter/" target="_blank" rel="noopener"
+                class="cp-handle">@JKByteCrafter ↗</a>
+            </div>
+          </div>
+          <div class="cp-stats-main">
+            <div class="ring-wrap">
+              <svg class="progress-ring" viewBox="0 0 120 120">
+                <circle class="ring-bg" cx="60" cy="60" r="50" />
+                <circle class="ring-fill lc-ring" id="lc-ring" cx="60" cy="60" r="50" stroke-dasharray="314"
+                  stroke-dashoffset="314" />
+              </svg>
+              <div class="ring-center">
+                <span class="ring-num" id="lc-total">–</span>
+                <span class="ring-label">Solved</span>
+              </div>
+            </div>
+            <div class="cp-breakdown">
+              <div class="diff-row easy">
+                <span class="diff-label">Easy</span>
+                <span class="diff-bar-wrap"><span class="diff-bar" id="lc-easy-bar"></span></span>
+                <span class="diff-num" id="lc-easy">–</span>
+              </div>
+              <div class="diff-row medium">
+                <span class="diff-label">Medium</span>
+                <span class="diff-bar-wrap"><span class="diff-bar" id="lc-med-bar"></span></span>
+                <span class="diff-num" id="lc-med">–</span>
+              </div>
+              <div class="diff-row hard">
+                <span class="diff-label">Hard</span>
+                <span class="diff-bar-wrap"><span class="diff-bar" id="lc-hard-bar"></span></span>
+                <span class="diff-num" id="lc-hard">–</span>
+              </div>
+            </div>
+          </div>
+          <div class="cp-footer">
+            <span class="cp-status" id="lc-status">Fetching live data…</span>
+            <a href="https://leetcode.com/u/JKByteCrafter/" target="_blank" rel="noopener" class="cp-verify-btn">Verify
+              on LeetCode ↗</a>
+          </div>
+        </div>
+
+        <!-- Codeforces Card -->
+        <div class="cp-card" id="cf-card">
+          <div class="cp-card-header">
+            <div class="cp-logo cf-logo">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <rect x="0" y="12" width="6" height="12" rx="1" fill="#1195F5" />
+                <rect x="9" y="6" width="6" height="18" rx="1" fill="#ED3434" />
+                <rect x="18" y="0" width="6" height="24" rx="1" fill="#1195F5" />
+              </svg>
+            </div>
+            <div>
+              <h3 class="cp-platform">Codeforces</h3>
+              <a href="https://codeforces.com/profile/jatinkumar15002" target="_blank" rel="noopener"
+                class="cp-handle">@jatinkumar15002 ↗</a>
+            </div>
+          </div>
+          <div class="cp-stats-main">
+            <div class="ring-wrap">
+              <svg class="progress-ring" viewBox="0 0 120 120">
+                <circle class="ring-bg" cx="60" cy="60" r="50" />
+                <circle class="ring-fill cf-ring" id="cf-ring" cx="60" cy="60" r="50" stroke-dasharray="314"
+                  stroke-dashoffset="314" />
+              </svg>
+              <div class="ring-center">
+                <span class="ring-num" id="cf-rating">–</span>
+                <span class="ring-label">Rating</span>
+              </div>
+            </div>
+            <div class="cp-breakdown">
+              <div class="cf-stat-row">
+                <span class="cf-stat-label">Rank</span>
+                <span class="cf-stat-val" id="cf-rank">–</span>
+              </div>
+              <div class="cf-stat-row">
+                <span class="cf-stat-label">Max Rating</span>
+                <span class="cf-stat-val" id="cf-max-rating">–</span>
+              </div>
+              <div class="cf-stat-row">
+                <span class="cf-stat-label">Problems Solved</span>
+                <span class="cf-stat-val" id="cf-solved">–</span>
+              </div>
+            </div>
+          </div>
+          <div class="cp-footer">
+            <span class="cp-status" id="cf-status">Fetching live data…</span>
+            <a href="https://codeforces.com/profile/jatinkumar15002" target="_blank" rel="noopener"
+              class="cp-verify-btn">Verify on CF ↗</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== AWARDS ===== -->
+  <section id="awards" class="section">
+    <div class="container">
+      <h2 class="section-title">Awards &amp; <span class="highlight">Certifications</span></h2>
+      <div class="timeline">
+
+        <div class="timeline-item reveal">
+          <div class="tl-icon tl-gold">🏆</div>
+          <div class="tl-content">
+            <h3 class="tl-title">Best Session Paper Award</h3>
+            <p class="tl-sub">International Conference on English Learning and Teaching Skills (2024)</p>
+            <p class="tl-desc">Research paper on <em>Anxiety Order and Stress Management</em></p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="tl-icon tl-cyan">🎓</div>
+          <div class="tl-content">
+            <h3 class="tl-title">Academic Excellence – Rank 7</h3>
+            <p class="tl-sub">CSE Department, IEM Kolkata</p>
+            <p class="tl-desc">Overall CGPA of <strong>9.75</strong> in 2nd year</p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="tl-icon tl-purple">📜</div>
+          <div class="tl-content">
+            <h3 class="tl-title">NPTEL Certifications – SWAYAM (MHRD)</h3>
+            <p class="tl-sub">Ministry of Human Resource Development, India</p>
+            <p class="tl-desc">Fundamentals of OOP · Operating System Fundamentals · Python Programming · DSA using Java
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="tl-icon tl-coral">⚡</div>
+          <div class="tl-content">
+            <h3 class="tl-title">LeetCode Problem Solving</h3>
+            <p class="tl-sub">275+ problems solved</p>
+            <p class="tl-desc">Arrays, Linked Lists, Graphs, Sliding Window, Binary Search, Tree Algorithms</p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="tl-icon tl-blue">🔢</div>
+          <div class="tl-content">
+            <h3 class="tl-title">Codeforces Competitive Programming</h3>
+            <p class="tl-sub">Rating: 1138 · Consistent algorithmic contest participation</p>
+            <p class="tl-desc">Achieved through regular competitive programming challenges</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EDUCATION ===== -->
+  <section id="education" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">Edu<span class="highlight">cation</span></h2>
+      <div class="edu-card reveal">
+        <div class="edu-left">
+          <div class="edu-badge">B.Tech</div>
+          <div>
+            <h3 class="edu-degree">Computer Science &amp; Engineering</h3>
+            <p class="edu-institute">Institute of Engineering and Management, Kolkata</p>
+          </div>
+        </div>
+        <div class="edu-right">
+          <div class="edu-detail">
+            <span class="edu-detail-label">Period</span>
+            <span class="edu-detail-val">2023 – 2027</span>
+          </div>
+          <div class="edu-detail">
+            <span class="edu-detail-label">CGPA</span>
+            <span class="edu-detail-val edu-cgpa">9.47 / 10</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact" class="section">
+    <div class="container contact-container">
+      <h2 class="section-title">Get In <span class="highlight">Touch</span></h2>
+      <p class="contact-tagline">Open to internships, research collaborations, and exciting opportunities.</p>
+      <div class="contact-links">
+        <a href="mailto:jatinkumar15002@gmail.com" class="contact-card" id="email-card">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+            <polyline points="22,6 12,13 2,6" />
+          </svg>
+          <span>jatinkumar15002@gmail.com</span>
+        </a>
+        <a href="tel:+916290016681" class="contact-card">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path
+              d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 11.5a19.79 19.79 0 01-3.07-8.67A2 2 0 012 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" />
+          </svg>
+          <span>+91-6290016681</span>
+        </a>
+        <a href="https://linkedin.com/in/jatin-kumar-2ba94a28a" target="_blank" rel="noopener" class="contact-card">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M20.45 20.45H17V14.88c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.57V9h3.26v1.56h.05c.45-.86 1.56-1.77 3.2-1.77 3.42 0 4.05 2.25 4.05 5.17v6.49zM5.34 7.43a1.9 1.9 0 110-3.8 1.9 1.9 0 010 3.8zM6.93 20.45H3.75V9h3.18v11.45zM22.22 0H1.77C.8 0 0 .77 0 1.72v20.56C0 23.23.8 24 1.77 24h20.45C23.2 24 24 23.23 24 22.28V1.72C24 .77 23.2 0 22.22 0z" />
+          </svg>
+          <span>linkedin.com/in/jatin-kumar-2ba94a28a</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer id="footer">
+    <p>Designed & built by <strong>Jatin Kumar</strong> &nbsp;·&nbsp; <span id="footer-year"></span></p>
+    <p class="footer-sub">Real-time stats powered by LeetCode GraphQL &amp; Codeforces API</p>
+  </footer>
+
+  <!-- Three.js CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>
